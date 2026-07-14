@@ -9,7 +9,7 @@ export function HeroSection() {
     <section id="home" className="relative isolate overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/ChatGPT Image Jul 14, 2026, 05_59_13 PM.png"
+          src="/hero.png"
           alt="Premium cleaning products — sprays, mop and bucket set arranged in a bright modern home"
           fill
           priority

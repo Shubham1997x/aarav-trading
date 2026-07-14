@@ -68,10 +68,10 @@ export function ProductCard({ product }: { product: Product }) {
         <CardFooter className="mt-3 flex-col gap-2 border-t-0 bg-transparent px-4 pb-4">
           <Button
             onClick={() => setEnquiryOpen(true)}
-            className="h-11 w-full gap-2 rounded-full bg-foreground text-base font-semibold text-background hover:bg-foreground/85"
+            className="h-10 w-full min-w-0 gap-1.5 rounded-full bg-foreground px-2 text-sm font-semibold whitespace-normal text-background hover:bg-foreground/85 sm:h-11 sm:gap-2 sm:px-4 sm:text-base"
           >
-            <LuMessageSquare className="size-4" />
-            Send Enquiry
+            <LuMessageSquare className="size-4 shrink-0" />
+            <span className="truncate">Send Enquiry</span>
           </Button>
           <Button
             variant="outline"
@@ -83,10 +83,10 @@ export function ProductCard({ product }: { product: Product }) {
                 rel="noopener noreferrer"
               />
             }
-            className="h-11 w-full gap-2 rounded-full border-emerald-200 bg-emerald-50 text-base font-semibold text-emerald-700 hover:bg-emerald-100"
+            className="h-10 w-full min-w-0 gap-1.5 rounded-full border-emerald-200 bg-emerald-50 px-2 text-sm font-semibold whitespace-normal text-emerald-700 hover:bg-emerald-100 sm:h-11 sm:gap-2 sm:px-4 sm:text-base"
           >
-            <FaWhatsapp className="size-4" />
-            WhatsApp Enquiry
+            <FaWhatsapp className="size-4 shrink-0" />
+            <span className="truncate">WhatsApp Enquiry</span>
           </Button>
         </CardFooter>
       </Card>
